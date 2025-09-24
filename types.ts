@@ -1,4 +1,3 @@
-
 export enum AppStep {
   UPLOAD_PROFILE,
   GENERATE_BODY,
@@ -8,12 +7,13 @@ export enum AppStep {
 }
 
 export interface ClothingItem {
-    id: number;
-    name: string;
-    imageUrl: string;
+  itemUrl: string;
+  imageUrl: string;
+  itemCaption: string;
+  itemName: string;
 }
 
 export interface UserProfile {
-    age: number;
-    gender: string;
+  age: number;
+  gender: string;
 }
